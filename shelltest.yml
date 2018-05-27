@@ -2,5 +2,8 @@
 - name: Tests for Ansible Tower
   hosts: all
   tasks:
-    - name: Create test file
-      shell: touch /home/gacerioni/4Linux/ansible/ALIVE
+  - file:
+    path: /tmp/gabs.conf
+    owner: foo
+    group: foo
+    mode: 0644
