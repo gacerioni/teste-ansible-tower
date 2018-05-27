@@ -2,8 +2,9 @@
 - name: Tests for Ansible Tower
   hosts: all
   tasks:
-  - file:
-    path: /tmp/gabs.conf
-    owner: foo
-    group: foo
-    mode: 0644
+  - name: ensure apache is at the latest version
+    file:
+      path: /tmp/gabs.conf
+      owner: foo
+      group: foo
+      mode: 0644
