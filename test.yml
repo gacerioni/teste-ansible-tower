@@ -5,7 +5,5 @@
   - name: ensure apache is at the latest version
     file:
       path: /tmp/gabs.conf
-      owner: root
-      group: root
       mode: 0644
       state: touch
